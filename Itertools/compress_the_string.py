@@ -13,7 +13,7 @@ A single line of output consisting of the modified string.
 from __future__ import print_function
 from itertools import groupby
 
-string = raw_input().strip()
+string = input().strip()
 for k, v in groupby(string):
 
     print((len(list(v)), int(k)), end=" ")
